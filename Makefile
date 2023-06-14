@@ -16,5 +16,7 @@ generate:
 	./vendor/bin/doctrine-migrations migrations:generate
 migrate:
 	./vendor/bin/doctrine-migrations migrations:migrate	
+docker migrate:
+	sudo docker exec -it laravel_vue_php ./vendor/bin/doctrine-migrations migrate
 
 	
